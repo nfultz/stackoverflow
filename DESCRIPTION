@@ -1,0 +1,9 @@
+Package: stackoverflow
+Type: Package
+Title: Stack Overflow's Greatest Hits
+Version: 0.1.0
+Date: 2015-02-16
+Author: Neal Fultz <nfultz@gmail.com> and the StackOverflow.com community
+Maintainer: Neal Fultz <njf@zestfinance.com>
+Description: A collection of helper functions found on StackOverflow
+License: CC BY-SA 3.0
