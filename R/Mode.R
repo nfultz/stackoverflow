@@ -1,5 +1,7 @@
 #' Calculate mode (most common element) of a vector
 #' 
+#' @param x a vector
+#' 
 #' @export
 #' @author Ken Williams
 #' @references \url{http://stackoverflow.com/questions/2547402/standard-library-function-in-r-for-finding-the-mode}

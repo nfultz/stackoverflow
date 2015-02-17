@@ -6,6 +6,9 @@
 \usage{
 Mode(x)
 }
+\arguments{
+\item{x}{a vector}
+}
 \description{
 Calculate mode (most common element) of a vector
 }

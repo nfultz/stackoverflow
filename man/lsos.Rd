@@ -6,6 +6,11 @@
 \usage{
 lsos(..., n = 10)
 }
+\arguments{
+\item{...}{to be passed along to internal}
+
+\item{n}{to be given to head}
+}
 \description{
 Improved list of objects
 }
