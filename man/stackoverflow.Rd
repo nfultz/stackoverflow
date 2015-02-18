@@ -4,8 +4,8 @@
 \name{stackoverflow}
 \alias{stackoverflow}
 \alias{stackoverflow-package}
-\title{Stack Overflows Greatest Hits}
+\title{Stack Overflow's Greatest Hits}
 \description{
-Stack Overflows Greatest Hits
+Stack Overflow's Greatest Hits
 }
 
