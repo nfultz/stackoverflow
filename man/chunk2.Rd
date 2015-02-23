@@ -14,6 +14,9 @@ chunk2(x, n)
 \description{
 Split a vector into n chunks
 }
+\examples{
+chunk2(1:30, 6)
+}
 \author{
 mathheadinclouds, Dis Shishkov
 }

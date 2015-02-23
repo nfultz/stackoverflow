@@ -4,13 +4,19 @@
 \alias{flatten2}
 \title{Flatten a list without type coercion}
 \usage{
-flatten2(x)
+flatten2(x, len = 1024)
 }
 \arguments{
 \item{x}{a nested list}
+
+\item{len}{guess of output length}
 }
 \description{
 Flatten a list without type coercion
+}
+\section{Changed Feb 19, 2015 by njf}{
+
+Rather than calculating length, preallocate more than needed.
 }
 \author{
 Tommy, Joshua Ulrich, Josh O'Brien, Neal Fultz

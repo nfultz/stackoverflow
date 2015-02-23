@@ -4,13 +4,20 @@
 \alias{readkey}
 \title{Wait for a keypress}
 \usage{
-readkey()
+readkey(prompt = "Press [enter] to continue")
+}
+\arguments{
+\item{prompt}{the text to display}
 }
 \description{
 Wait for a keypress
 }
+\section{Changed Feb 23, 2015 by njf}{
+
+\code{prompt} may be set by a parameter rather than hard coding it.
+}
 \author{
-nnn, arulmr
+nnn, arulmr, Neal Fultz
 }
 \references{
 \url{http://stackoverflow.com/questions/15272916/how-to-wait-for-a-keypress-in-r}

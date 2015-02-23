@@ -6,6 +6,8 @@
 #' @author mathheadinclouds, Dis Shishkov
 #' @references \url{http://stackoverflow.com/questions/3318333/split-a-vector-into-chunks-in-r}
 #' @export
+#' @examples
+#'  chunk2(1:30, 6)
 
 chunk2 <- function(x,n) split(x, cut(seq_along(x), n, labels = FALSE)) 
 

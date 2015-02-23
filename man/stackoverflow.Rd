@@ -6,6 +6,6 @@
 \alias{stackoverflow-package}
 \title{Stack Overflow's Greatest Hits}
 \description{
-Stack Overflow's Greatest Hits
+This is a collection of useful functions originally found on stackoverflow.com.
 }
 
