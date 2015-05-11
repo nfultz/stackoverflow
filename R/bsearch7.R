@@ -9,23 +9,19 @@
 #' @export
 #' @examples
 #'  bsearch7(sample(letters, 5000, replace=TRUE, letters)
-bsearch7 <-
+bsearch9 <-
      function(val, tab, L=1L, H=length(tab))
 {
-     b <- cbind(L=rep(L, length(val)), H=rep(H, length(val)))
+     n <- length(val)
+     b <- matrix(c(L,H),n,2,byrow=TRUE) 
      i0 <- seq_along(val)
+
      repeat {
-         updt <- M <- b[i0,"L"] + (b[i0,"H"] - b[i0,"L"]) %/% 2L
-         tabM <- tab[M]
-         val0 <- val[i0]
-         i <- tabM < val0
-         updt[i] <- M[i] + 1L
-         i <- tabM > val0
-         updt[i] <- M[i] - 1L
-         b[i0 + i * length(val)] <- updt
-         i0 <- which(b[i0, "H"] >= b[i0, "L"])
-         if (!length(i0)) break;
+         M <- (b[,1] + b[,2]) %/% 2L
+         i <- tab[M] > val
+         b[i0 + i * n] <- M - i - i + 1L
+         if(!any(b[, 2] >= b[, 1])) break;
      }
-     b[,"L"] - 1L
+     b[,1] - 1L
 }
 
