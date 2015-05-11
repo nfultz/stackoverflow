@@ -8,8 +8,8 @@
 #'             \url{https://stat.ethz.ch/pipermail/r-help/2011-April/274182.html}
 #' @export
 #' @examples
-#'  bsearch7(sample(letters, 5000, replace=TRUE, letters)
-bsearch9 <-
+#'  bsearch7(sample(letters, 5000, replace=TRUE, letters))
+bsearch7 <-
      function(val, tab, L=1L, H=length(tab))
 {
      n <- length(val)
