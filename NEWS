@@ -1,0 +1,7 @@
+stackoverflow 0.1.1
+----------------------------------------------------------------
+
+NEW FEATURES
+
+* bsearch7() provides a fast binary search for lower bound; supports character
+  vectors.
