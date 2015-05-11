@@ -15,7 +15,7 @@ lsos(..., n = 10)
 Improved list of objects
 }
 \author{
-Dirk Eddelbuettel
+\href{http://stackoverflow.com/users/143305/dirk-eddelbuettel}{Dirk Eddelbuettel}
 }
 \references{
 \url{http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session}

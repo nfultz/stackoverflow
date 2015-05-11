@@ -1,3 +1,15 @@
+stackoverflow 0.1.2
+----------------------------------------------------------------
+
+This release only changes package metadata:
+
+* License is forward ported to CC-BY-SA 4.0 for CRAN acceptance; see 
+  http://meta.stackexchange.com/questions/214549/does-se-need-to-switch-to-cc-by-sa-4-0
+  
+* Authors are now hyperlinked in documentation as required by 
+  http://blog.stackoverflow.com/2009/06/attribution-required/
+
+
 stackoverflow 0.1.1
 ----------------------------------------------------------------
 

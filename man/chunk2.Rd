@@ -18,7 +18,8 @@ Split a vector into n chunks
 chunk2(1:30, 6)
 }
 \author{
-mathheadinclouds, Dis Shishkov
+\href{http://stackoverflow.com/users/1563634/mathheadinclouds}{mathheadinclouds},
+  \href{http://stackoverflow.com/users/1737569/dis-shishkov}{Dis Shishkov}
 }
 \references{
 \url{http://stackoverflow.com/questions/3318333/split-a-vector-into-chunks-in-r}

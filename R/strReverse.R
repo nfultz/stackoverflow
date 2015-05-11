@@ -5,7 +5,7 @@
 #' @param x a character vector
 #' 
 #' @export
-#' @author Josh O'Brien
+#' @author \href{http://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien} 
 #' @references \url{https://stackoverflow.com/questions/13612967/how-to-reverse-a-string-in-r}
 #' 
 #' @examples

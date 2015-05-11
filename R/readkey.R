@@ -6,7 +6,9 @@
 #' 
 #' @param prompt the text to display
 #' 
-#' @author nnn, arulmr, Neal Fultz
+#' @author \href{http://stackoverflow.com/users/2427707/nnn}{nnn}, 
+#'   \href{http://stackoverflow.com/users/1095090/arulmr}{arulmr}, 
+#'   Neal Fultz
 #' @references \url{http://stackoverflow.com/questions/15272916/how-to-wait-for-a-keypress-in-r}
 #' @export
 readkey <- function(prompt="Press [enter] to continue") invisible(readline(prompt))

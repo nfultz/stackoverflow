@@ -4,7 +4,7 @@
 #' @param n to be given to head
 #' 
 #' @export
-#' @author Dirk Eddelbuettel
+#' @author \href{http://stackoverflow.com/users/143305/dirk-eddelbuettel}{Dirk Eddelbuettel}
 #' @references \url{http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session}
 lsos <- function(..., n=10) {
   .ls.objects(..., order.by="Size", decreasing=TRUE, head=TRUE, n=n)

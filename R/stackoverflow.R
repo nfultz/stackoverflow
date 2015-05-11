@@ -1,7 +1,11 @@
 #' Stack Overflow's Greatest Hits
 #' 
-#' This is a collection of useful functions originally found on stackoverflow.com.
+#' The stackoverflow package consists of helper functions 
+#'  collected from StackOverflow.com, a question and answer site for professional
+#'  and enthusiast programmers.
 #' 
 #' @name stackoverflow
 #' @docType package
+#' 
+#' @references \url{http://stackoverflow.com}
 NULL
