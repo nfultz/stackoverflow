@@ -1,4 +1,4 @@
-#' Find duplicates in a string
+#' Find duplicates in a vector
 #' 
 #' This will find all duplicates in a run, unlike \code{\link{duplicated}} which
 #' finds duplicates globally.

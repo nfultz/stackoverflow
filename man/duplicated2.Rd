@@ -2,7 +2,7 @@
 % Please edit documentation in R/duplicated2.R
 \name{duplicated2}
 \alias{duplicated2}
-\title{Find duplicates in a string}
+\title{Find duplicates in a vector}
 \usage{
 duplicated2(x)
 }
