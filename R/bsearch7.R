@@ -22,7 +22,7 @@ bsearch7 <-
          M <- (b[,1] + b[,2]) %/% 2L
          i <- tab[M] > val
          b[i0 + i * n] <- M - i - i + 1L
-         if(!any(b[, 2] >= b[, 1])) break;
+         if(all(b[, 2] < b[, 1])) break;
      }
      b[,1] - 1L
 }
