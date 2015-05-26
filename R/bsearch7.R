@@ -15,14 +15,14 @@ bsearch7 <-
      function(val, tab, L=1L, H=length(tab))
 {
      n <- length(val)
-     b <- matrix(c(L,H),n,2,byrow=TRUE) 
+     b <- matrix(c(L,H), n, 2, byrow=TRUE) 
      i0 <- seq_along(val)
 
      repeat {
          M <- (b[,1] + b[,2]) %/% 2L
          i <- tab[M] > val
          b[i0 + i * n] <- M - i - i + 1L
-         if(all(b[, 2] < b[, 1])) break;
+         if(all(b[,2] < b[,1])) break;
      }
      b[,1] - 1L
 }
