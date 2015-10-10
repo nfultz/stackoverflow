@@ -5,7 +5,7 @@
 #' @param replace
 #' @param prob  
 #' 
-#' @section Changes
+#' @section Changes:
 #' Matched parameters to sample -- njf, May 18, 2015
 #' 
 #' @seealso \code{\link{sample}}

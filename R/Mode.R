@@ -3,7 +3,7 @@
 #' @param x a vector
 #' @param ux vector of values x may take  
 #' 
-#' @section Changes
+#' @section  Changes:
 #' Factored \code{ux} into argument -- njf, May 18, 2015
 #' 
 #' @export
