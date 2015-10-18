@@ -9,11 +9,11 @@ randomRows(x, size, replace = FALSE, prob = NULL)
 \arguments{
 \item{x}{a data frame or matrix}
 
-\item{size}{}
+\item{size}{a non-negative integer giving the number of items to choose.}
 
-\item{replace}{}
+\item{replace}{Should sampling be with replacement?}
 
-\item{prob}{}
+\item{prob}{A vector of probability weights for obtaining the elements of the vector being sampled.}
 }
 \description{
 Sample rows from a dataframe or matrix
@@ -30,5 +30,7 @@ Matched parameters to sample -- njf, May 18, 2015
 }
 \seealso{
 \code{\link{sample}}
+
+\code{\link[dplyr]{sample_n}} for dplyr users
 }
 

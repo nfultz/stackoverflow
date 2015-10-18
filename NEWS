@@ -1,3 +1,15 @@
+stackoverflow 0.1.3
+----------------------------------------------------------------
+
+This release adds the following functions:
+
+* distribution functions for density objects
+
+* partial function evaluation / currying
+
+* A log-likelihood function for kmeans objects
+
+
 stackoverflow 0.1.2
 ----------------------------------------------------------------
 

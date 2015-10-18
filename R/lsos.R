@@ -3,6 +3,7 @@
 #' @param ... to be passed along to internal
 #' @param n to be given to head
 #' 
+#' @importFrom utils object.size
 #' @export
 #' @author \href{http://stackoverflow.com/users/143305/dirk-eddelbuettel}{Dirk Eddelbuettel}
 #' @references \url{http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session}
