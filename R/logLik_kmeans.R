@@ -1,6 +1,7 @@
 #' Log-Likelihood for k-means clustering (for calculating AIC and BIC)
 #' 
 #' @param object a \code{kmeans} object
+#' @param ... unused
 #' 
 #' @author Neal Fultz, inspired by Sherry Towers and 
 #'   \href{http://stackoverflow.com/users/2514568/andy-clifton}{Andy Clifton}, 
@@ -11,7 +12,7 @@
 #' cl <- kmeans(iris[-5], 3)
 #' AIC(cl)
 
-logLik.kmeans <- function(object) structure(
+logLik.kmeans <- function(object, ...) structure(
   object$tot.withinss,
   nobs = length(object$cluster),
   df = nrow(object$centers) * ncol(object$centers),

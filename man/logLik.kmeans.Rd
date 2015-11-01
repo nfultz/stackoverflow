@@ -4,10 +4,12 @@
 \alias{logLik.kmeans}
 \title{Log-Likelihood for k-means clustering (for calculating AIC and BIC)}
 \usage{
-\method{logLik}{kmeans}(object)
+\method{logLik}{kmeans}(object, ...)
 }
 \arguments{
 \item{object}{a \code{kmeans} object}
+
+\item{...}{unused}
 }
 \description{
 Log-Likelihood for k-means clustering (for calculating AIC and BIC)

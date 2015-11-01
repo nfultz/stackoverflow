@@ -17,10 +17,8 @@ copyEnv(from, to, names = ls(from, all.names = TRUE))
 Copy objects from one environment to another
 }
 \examples{
-e1 <- new.env()
+e1 <- list2env(list(a=1, b=2))
 e2 <- new.env()
-e1$a <- 1
-e1$b <- 2
 copyEnv(e1,e2)
 ls(e2)
 }
@@ -28,6 +26,6 @@ ls(e2)
 Neal Fultz
 }
 \references{
-\url{http://stackoverflow.com/a/11813377/986793}
+\url{http://stackoverflow.com/a/33465113/986793}
 }
 

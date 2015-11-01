@@ -7,8 +7,11 @@ This release adds the following functions:
 
 * partial function evaluation / currying
 
-* A log-likelihood function for kmeans objects
+* a log-likelihood function for kmeans objects
 
+* resave a dataset
+
+* clone environments
 
 stackoverflow 0.1.2
 ----------------------------------------------------------------
