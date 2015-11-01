@@ -1,4 +1,4 @@
-#' Log-Likelihood for caluclating AIC and BIC for k-means clustering
+#' Log-Likelihood for k-means clustering (for calculating AIC and BIC)
 #' 
 #' @param object a \code{kmeans} object
 #' 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/logLik_kmeans.R
 \name{logLik.kmeans}
 \alias{logLik.kmeans}
-\title{Log-Likelihood for caluclating AIC and BIC for k-means clustering}
+\title{Log-Likelihood for k-means clustering (for calculating AIC and BIC)}
 \usage{
 \method{logLik}{kmeans}(object)
 }
@@ -10,7 +10,7 @@
 \item{object}{a \code{kmeans} object}
 }
 \description{
-Log-Likelihood for caluclating AIC and BIC for k-means clustering
+Log-Likelihood for k-means clustering (for calculating AIC and BIC)
 }
 \examples{
 cl <- kmeans(iris[-5], 3)
