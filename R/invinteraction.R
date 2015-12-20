@@ -32,7 +32,8 @@
 invinteraction <- function(fac, ..., sep='.') {
   
   stbl <- do.call(rbind.data.frame, strsplit(levels(fac), sep, TRUE))
-
+  stbl[] <- lapply(stbl, as.factor)
+  
   colnames(stbl) <- if(missing(...)) paste0('V', seq_along(stbl)) else  c(...)
   
   `rownames<-`(stbl[fac, , drop=FALSE], NULL)
