@@ -15,6 +15,6 @@
 #' @author \href{http://stackoverflow.com/users/211116/spacedman}{Spacedman}
 #' @references \url{http://stackoverflow.com/questions/8273313/random-rows-in-dataframe-in-r}
 
-randomRows = function(x, size, replace=FALSE, prob=NULL){
+randomRows <- function(x, size, replace=FALSE, prob=NULL){
    x[sample(nrow(x), size, replace, prob),]
 }
