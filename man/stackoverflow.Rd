@@ -11,6 +11,7 @@ The stackoverflow package consists of helper functions
  and enthusiast programmers.
 }
 \references{
-\url{http://stackoverflow.com}
+\url{http://stackoverflow.com},
+\url{https://github.com/nfultz/stackoverflow}
 }
 

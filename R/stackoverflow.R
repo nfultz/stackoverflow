@@ -7,5 +7,6 @@
 #' @name stackoverflow
 #' @docType package
 #' 
-#' @references \url{http://stackoverflow.com}
+#' @references \url{http://stackoverflow.com},
+#' \url{https://github.com/nfultz/stackoverflow}
 NULL
