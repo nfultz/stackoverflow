@@ -24,6 +24,7 @@ Inverse of \code{interaction}
 
 Refactored to process the levels vector, rather than entire factor vector.
 }
+
 \examples{
 
 f1 <- gl(2, 3)
@@ -37,13 +38,12 @@ ppl <- interaction(
 str(invinteraction(ppl, "eyes", "hair"))
 
 }
-\author{
-\href{http://stackoverflow.com/users/1855677/42}{42}, Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/a/10521926/986793}
 }
 \seealso{
 \code{\link[base]{interaction}}
 }
-
+\author{
+\href{http://stackoverflow.com/users/1855677/42}{42}, Neal Fultz
+}

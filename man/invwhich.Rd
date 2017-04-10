@@ -27,6 +27,7 @@ Gives a logical vector which is TRUE for the indices provided
 Rather than using a \code{useNames} logical to copy the names attribute from 
 one vector to another, you may specify names via the \code{nm} argument.
 }
+
 \examples{
 
 x <- rnorm(50) > 1
@@ -38,13 +39,12 @@ all.equal(
   grepl('O', state.abb)
 )
 }
-\author{
-\href{http://stackoverflow.com/users/709529/nick-sabbe}{Nick Sabbe}, Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/a/7661128/986793}
 }
 \seealso{
 \code{\link[base]{interaction}}
 }
-
+\author{
+\href{http://stackoverflow.com/users/709529/nick-sabbe}{Nick Sabbe}, Neal Fultz
+}

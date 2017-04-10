@@ -14,4 +14,3 @@ The stackoverflow package consists of helper functions
 \url{http://stackoverflow.com},
 \url{https://github.com/nfultz/stackoverflow}
 }
-

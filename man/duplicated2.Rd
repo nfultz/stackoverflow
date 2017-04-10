@@ -16,10 +16,9 @@ finds duplicates globally.
 \examples{
 duplicated2(c(2,3,3,2,2,3,3,3,3,2,2))
 }
-\author{
-\href{http://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien}, Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/questions/30260507/exclude-subsequent-duplicated-rows-in-r}
 }
-
+\author{
+\href{http://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien}, Neal Fultz
+}

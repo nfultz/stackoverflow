@@ -27,12 +27,11 @@ print( api_idea )
 `)
 
 }
+\references{
+\url{http://stackoverflow.com/questions/1231195/multiline-comment-workarounds}
+}
 \author{
 \href{http://stackoverflow.com/users/173985/thell}{Thell},
 \href{http://stackoverflow.com/users/211116/spacedman}{Spacedman}
   Neal Fultz
 }
-\references{
-\url{http://stackoverflow.com/questions/1231195/multiline-comment-workarounds}
-}
-

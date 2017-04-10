@@ -23,10 +23,9 @@ e2 <- new.env()
 copyEnv(e1,e2)
 ls(e2)
 }
-\author{
-Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/a/33465113/986793}
 }
-
+\author{
+Neal Fultz
+}

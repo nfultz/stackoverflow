@@ -14,10 +14,9 @@ lsos(..., n = 10)
 \description{
 Improved list of objects
 }
-\author{
-\href{http://stackoverflow.com/users/143305/dirk-eddelbuettel}{Dirk Eddelbuettel}
-}
 \references{
 \url{http://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session}
 }
-
+\author{
+\href{http://stackoverflow.com/users/143305/dirk-eddelbuettel}{Dirk Eddelbuettel}
+}

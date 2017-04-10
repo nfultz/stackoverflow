@@ -37,10 +37,6 @@ r <- rdensity(10000, d)
 plot(d)
 lines(density(r), new=TRUE, col='blue', lty='dashed')
 }
-\author{
-\href{http://stackoverflow.com/users/295691/user295691}{user295691}, 
-  Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/questions/32871602/r-generate-data-from-a-probability-density-distribution}
 }
@@ -51,4 +47,7 @@ lines(density(r), new=TRUE, col='blue', lty='dashed')
 
 \code{\link[ks]{rkde}}
 }
-
+\author{
+\href{http://stackoverflow.com/users/295691/user295691}{user295691}, 
+  Neal Fultz
+}
