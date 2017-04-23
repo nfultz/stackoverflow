@@ -25,9 +25,6 @@ labeller <- partial(sprintf, fmt="extra=\%3.2f, group=\%d, ID=\%d")
 do.call(labeller, sleep[1, , drop=FALSE])
 
 }
-\author{
-\href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz},
-}
 \references{
 \url{http://stackoverflow.com/questions/32173901/how-to-efficiently-partially-apply-a-function-in-r}
 }
@@ -36,4 +33,6 @@ do.call(labeller, sleep[1, , drop=FALSE])
 
 \code{\link[functional]{Curry}}
 }
-
+\author{
+\href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz},
+}

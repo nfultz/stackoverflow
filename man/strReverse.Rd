@@ -15,10 +15,9 @@ A function which will reverse every string in a vector of strings.
 \examples{
 strReverse(c("abc", "Statistics"))
 }
-\author{
-\href{http://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien}
-}
 \references{
 \url{https://stackoverflow.com/questions/13612967/how-to-reverse-a-string-in-r}
 }
-
+\author{
+\href{http://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien}
+}

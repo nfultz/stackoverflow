@@ -18,10 +18,10 @@ Calculate mode (most common element) of a vector
 
 Factored \code{ux} into argument -- njf, May 18, 2015
 }
-\author{
-\href{http://stackoverflow.com/users/169947/ken-williams}{Ken Williams}
-}
+
 \references{
 \url{http://stackoverflow.com/questions/2547402/standard-library-function-in-r-for-finding-the-mode}
 }
-
+\author{
+\href{http://stackoverflow.com/users/169947/ken-williams}{Ken Williams}
+}

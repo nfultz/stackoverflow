@@ -22,9 +22,7 @@ Sample rows from a dataframe or matrix
 
 Matched parameters to sample -- njf, May 18, 2015
 }
-\author{
-\href{http://stackoverflow.com/users/211116/spacedman}{Spacedman}
-}
+
 \references{
 \url{http://stackoverflow.com/questions/8273313/random-rows-in-dataframe-in-r}
 }
@@ -33,4 +31,6 @@ Matched parameters to sample -- njf, May 18, 2015
 
 \code{\link[dplyr]{sample_n}} for dplyr users
 }
-
+\author{
+\href{http://stackoverflow.com/users/211116/spacedman}{Spacedman}
+}

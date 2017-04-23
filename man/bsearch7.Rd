@@ -21,11 +21,10 @@ Efficient binary search for character vectors
 \examples{
  bsearch7(sample(letters, 5000, replace=TRUE), letters)
 }
-\author{
-Martin Morgan, Neal Fultz
-}
 \references{
 \url{http://stackoverflow.com/questions/20133344/find-closest-value-in-a-vector-with-binary-search/} and
             \url{https://stat.ethz.ch/pipermail/r-help/2011-April/274182.html}
 }
-
+\author{
+Martin Morgan, Neal Fultz
+}

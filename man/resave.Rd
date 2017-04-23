@@ -16,14 +16,13 @@ resave(..., list = character(), file)
 \description{
 Resave a session
 }
-\author{
-Neal Fultz and
-  \href{http://stackoverflow.com/users/1201032/flodel}{flodel},
-}
 \references{
 \url{http://stackoverflow.com/a/11813377/986793}
 }
 \seealso{
 \code{\link[base]{load}}, \code{\link[base]{save}}
 }
-
+\author{
+Neal Fultz and
+  \href{http://stackoverflow.com/users/1201032/flodel}{flodel},
+}
