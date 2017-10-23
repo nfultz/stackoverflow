@@ -20,8 +20,7 @@ equal to the number of columns of z}
 Computes x = sz+c, which is the inverse of z = (x - c)/s 
 provided by the \code{scale} function.
 }
-\seealso{
-\code{\link{scale}}
+\examples{
  mtcs <- scale(mtcars)
  
  all.equal(
@@ -29,4 +28,21 @@ provided by the \code{scale} function.
    as.matrix(mtcars), 
    check.attributes=FALSE
  )
+ 
+ oldSeed <- .Random.seed
+ z <- unscale(rnorm(10), 2, .5)
+ .Random.seed <- oldSeed
+ x <- rnorm(10, 2, .5)
+ all.equal(z, x, check.attributes=FALSE)
+
+
+}
+\references{
+\url{https://stackoverflow.com/questions/10287545/backtransform-scale-for-plotting/46840073}
+}
+\seealso{
+\code{\link{scale}}
+}
+\author{
+Neal Fultz
 }
