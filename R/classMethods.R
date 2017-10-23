@@ -11,6 +11,7 @@
 #' classMethods(g)
 ####
 #' 
+#' @importFrom  utils methods
 #' @export
 #' @author \href{http://stackoverflow.com/users/2372064/mrflick}{MrFlick}
 #' @references \url{http://stackoverflow.com/questions/23840404/function-to-return-all-s3-methods-applicable-to-an-object}
@@ -31,6 +32,7 @@ classMethods <- function(cl) {
   df<-do.call(rbind, ml)
   df<-df[!duplicated(df$n),]
   structure(df$m, 
-            info=data.frame(visible=df$visible, from=df$from), 
+            byclass=FALSE,
+            info=data.frame(visible=df$visible, from=df$from, row.names = df$m), 
             class="MethodsFunction")
 }

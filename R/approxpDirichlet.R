@@ -9,6 +9,7 @@
 #' @examples
 #' approxpDirichlet(c(1,3,1), c(0.299, 0.528, 0.204))
 #' 
+#' @importFrom stats rgamma
 #' @export
 #' @author \href{http://stats.stackexchange.com/users/9394/zen}{Zen}, Neal Fultz
 #' @references \url{http://stats.stackexchange.com/questions/57262/implementation-of-dirichlet-cdf}
