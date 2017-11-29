@@ -3,7 +3,7 @@
 #' Create a new matrix by copying the lower(upper) triangle to the other half.
 #' 
 #' @param m a square matrix
-#' @param part lower or upper triangle
+#' @param from lower or upper triangle
 #' 
 #' @return a symmetric square matrix
 #' 

@@ -9,7 +9,7 @@ reflect_triangle(m, from = c("lower", "upper"))
 \arguments{
 \item{m}{a square matrix}
 
-\item{part}{lower or upper triangle}
+\item{from}{lower or upper triangle}
 }
 \value{
 a symmetric square matrix
