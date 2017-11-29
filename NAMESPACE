@@ -2,6 +2,7 @@
 
 S3method(logLik,kmeans)
 export(Comment)
+export(CurryF)
 export(Mode)
 export(approxAUC)
 export(approxpDirichlet)
