@@ -4,12 +4,12 @@
 \alias{cor2cov}
 \title{Back transform correlation matrix to variance-covariance matrix}
 \usage{
-cor2cov(V, sd)
+cor2cov(V, sd = sqrt(diag(V)))
 }
 \arguments{
 \item{V}{a variance covariance matrix}
 
-\item{sd}{a vector of standard deviations}
+\item{sd}{a vector of standard deviations - if ommitted, use the sqrt of the diagonal of V}
 }
 \value{
 a variance-covariance matrix

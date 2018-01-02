@@ -3,7 +3,7 @@
 #' Compute a variance-covariance matrix from a correlation matrix and standard deviations.
 #' 
 #' @param V a variance covariance matrix
-#' @param sd a vector of standard deviations
+#' @param sd a vector of standard deviations - if ommitted, use the sqrt of the diagonal of V
 #' 
 #' @return a variance-covariance matrix
 #' 
@@ -16,6 +16,7 @@
 #'   cor2cov(cor(mtcars), sapply(mtcars, sd)), 
 #'   cov(mtcars)
 #' ))
-cor2cov <- function(V, sd) {
+cor2cov <- function(V, sd=sqrt(diag(V))) {
+  stopifnot(is.matrix(V))
   V * tcrossprod(sd)
 }
