@@ -1,10 +1,17 @@
 # stackoverflow
 An R package for snippets from stackoverflow
 
-When you want to use a function from stack overflow, add it here. It's cleaner, and better for lawyers if it's seperate.
+When we want to use a function from stack overflow, add it here. It's cleaner,
+gives credit where credit is due, and is better for lawyers if it's seperate.
 
 ## Installation
 
-Using R 3.2.0 or greater:
+Using R 3.3.1 or greater:
 
-    install.packages("https://github.com/nfultz/stackoverflow/releases/download/v0.1.2/stackoverflow_0.1.2.tar.gz", repos=NULL, method='libcurl')
+    install.packages("https://github.com/nfultz/stackoverflow/releases/download/v0.1.2/stackoverflow_0.1.2.tar.gz")
+
+
+## Contributing
+
+If you see something great on SO, please email me with a link at nfultz@gmail.com ; 
+alternatively, PRs are always welcome as well :)
