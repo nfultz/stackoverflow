@@ -1,8 +1,8 @@
 Package: stackoverflow
 Type: Package
 Title: Stack Overflow's Greatest Hits
-Version: 0.2.0
-Date: 2017-2-17
+Version: 0.3.0
+Date: 2018-11-25
 Author: Neal Fultz <nfultz@gmail.com> and the StackOverflow.com community
 Maintainer: Neal Fultz <nfultz@gmail.com>
 Description: Helper functions collected from StackOverflow.com, a
