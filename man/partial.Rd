@@ -26,7 +26,7 @@ do.call(labeller, sleep[1, , drop=FALSE])
 
 }
 \references{
-\url{http://stackoverflow.com/questions/32173901/how-to-efficiently-partially-apply-a-function-in-r}
+\url{http://stackoverflow.com/questions/32173901/how-to-efficiently-partially-apply-a-function-in-r}, \url{https://stackoverflow.com/a/31900149/986793}
 }
 \seealso{
 \code{\link[pryr]{partial}}
@@ -34,5 +34,5 @@ do.call(labeller, sleep[1, , drop=FALSE])
 \code{\link[functional]{Curry}}
 }
 \author{
-\href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz},
+\href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz}, \href{https://stackoverflow.com/users/1756702/a-webb}{A Webb}
 }

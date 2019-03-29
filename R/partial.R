@@ -5,8 +5,8 @@
 #' @param f a function
 #' @param ... arguments to capture
 #' 
-#' @author \href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz}, 
-#' @references \url{http://stackoverflow.com/questions/32173901/how-to-efficiently-partially-apply-a-function-in-r}
+#' @author \href{http://stackoverflow.com/users/3093387/josilber}{John Silberholz}, \href{https://stackoverflow.com/users/1756702/a-webb}{A Webb}
+#' @references \url{http://stackoverflow.com/questions/32173901/how-to-efficiently-partially-apply-a-function-in-r}, \url{https://stackoverflow.com/a/31900149/986793}
 #' 
 #' @seealso \code{\link[pryr]{partial}}
 #' @seealso \code{\link[functional]{Curry}}
@@ -23,6 +23,7 @@
 #' 
 #' @export
 partial <- function(f, ...) {
+  force(f)
   l <- list(...)
   function(...) {
     do.call(f, c(l, list(...)))

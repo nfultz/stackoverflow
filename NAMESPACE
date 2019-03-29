@@ -3,7 +3,6 @@
 S3method(logLik,kmeans)
 S3method(t,list)
 export(Comment)
-export(CurryF)
 export(Mode)
 export(approxAUC)
 export(approxpDirichlet)
@@ -28,11 +27,8 @@ export(qdensity)
 export(randomRows)
 export(rdensity)
 export(readkey)
-<<<<<<< HEAD
-export(replace_null_recursively)
-=======
 export(reflect_triangle)
->>>>>>> c94dff5888bc3db1d0fd115d49222b148dd44efe
+export(replace_null_recursively)
 export(resave)
 export(rsplit)
 export(sprintf_named)
