@@ -12,11 +12,12 @@ rsplit(x, by, drop = FALSE)
 \item{by}{a data.frame of factors}
 
 \item{drop}{drop unused factor levels}
+}
+\value{
+a nested list of dataframes, split by each element of \code{by}
 
-\item{a}{nested list of dataframes, split by each element of \code{by}
 
-
-Inspired by, but different from the below}
+Inspired by, but different from the below
 }
 \description{
 When there are multiple factors to split by, Base R split returns a 

@@ -8,7 +8,7 @@
 #' @param by a data.frame of factors
 #' @param drop drop unused factor levels
 #' 
-#' @param a nested list of dataframes, split by each element of \code{by}
+#' @return a nested list of dataframes, split by each element of \code{by}
 #' 
 #' 
 #' Inspired by, but different from the below
@@ -16,6 +16,7 @@
 #' @references \url{https://stackoverflow.com/questions/47802545/converting-data-frame-into-deeply-nested-list/47802935#47802935}
 #' @author Neal Fultz
 #'
+#' @importFrom stats setNames
 #' @export
 rsplit <- function(x, by, drop=FALSE){
   if(is.atomic(by))  return(split(x,by,drop=drop))
