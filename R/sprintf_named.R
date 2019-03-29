@@ -28,10 +28,3 @@ sprintf_named <- function(fmt, ...) {
   
   do.call(sprintf, append(args, fmt, 0))
 }
-
-
-
-
-`%format%` <- function(left, right) do.call(sprintf_named, append(right, left, 0))
-
-"%{b}s %{a}s" %format% list(a='ya', b='boo')
