@@ -1,6 +1,6 @@
 #' Zip / Enumerate from python
 #'
-#' \code{zip}s together parallel lists into a list-of-lists. 
+#' \code{zip2}s together parallel lists into a list-of-lists. It is named zip2 to not collide with utils.
 #' 
 #' \code{enumerate} zips together a list with it's indices.
 #'
@@ -12,9 +12,9 @@
 #' @author \href{https://stackoverflow.com/users/986793/neal-fultz}{Neal Fultz}
 #' 
 #' @examples 
-#' zip(1:5,1:10)
+#' zip2(1:5,1:10)
 #' @export
-zip <- function(...) {
+zip2 <- function(...) {
   mapply(list, ..., SIMPLIFY = FALSE)
 }
 
@@ -22,5 +22,5 @@ zip <- function(...) {
 #' @examples 
 #' enumerate(l=LETTERS)
 enumerate <- function(...) {
-  zip(ix=seq_along(..1), ...)
+  zip2(ix=seq_along(..1), ...)
 }
