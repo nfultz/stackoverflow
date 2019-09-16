@@ -21,6 +21,14 @@ This creates an indicator matrix from several columns.
 }
 \examples{
 
+df2 <- structure(list(Dx1 = c("231", "231", "001", "245", "231", "001", 
+
+Y <- 1:nrow(df2)
+m <- lm(Y~bag(Dx1, Dx2, Dx3), df2)
+summary(m)
+
+
+
 }
 \references{
 \url{https://stackoverflow.com/questions/47055856/search-multiple-columns-for-string-to-set-indicator-variable/57381877#57381877}
