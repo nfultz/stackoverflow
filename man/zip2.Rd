@@ -2,9 +2,12 @@
 % Please edit documentation in R/zip.R
 \name{zip2}
 \alias{zip2}
+\alias{enumerate}
 \title{Zip / Enumerate from python}
 \usage{
 zip2(...)
+
+enumerate(...)
 }
 \arguments{
 \item{...}{Objects to be zipped together.}
@@ -20,6 +23,7 @@ a list of lists
 }
 \examples{
 zip2(1:5,1:10)
+enumerate(l=LETTERS)
 }
 \references{
 \url{https://stackoverflow.com/questions/9281323/zip-or-enumerate-in-r/57564884#57564884}

@@ -18,7 +18,7 @@ zip2 <- function(...) {
   mapply(list, ..., SIMPLIFY = FALSE)
 }
 
-#' @rdname zip
+#' @rdname zip2
 #' @examples 
 #' enumerate(l=LETTERS)
 enumerate <- function(...) {
