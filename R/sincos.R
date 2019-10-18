@@ -13,7 +13,7 @@
 #' @examples 
 #' 
 #' data(sunspots)
-#' lm(sunspots~sincos(time(sunspots), 5/pi)))
+#' lm(sunspots~sincos(time(sunspots), 5/pi))
 #' 
 #' @export
 sincos <- function(x, period=168/2/pi) {
@@ -27,6 +27,7 @@ sincos <- function(x, period=168/2/pi) {
 makepredictcall.sincos <- function(var, call){
   if (as.character(call)[1L] != "sincos")
     return(call)
+  call = match.call(sincos, call)
   call["period"] <- attr(var, "period")
   call
 }
