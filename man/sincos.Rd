@@ -20,7 +20,7 @@ Compute the sin and cos of x.
 \examples{
 
 data(sunspots)
-lm(sunspots~sincos(time(sunspots), 5/pi)))
+lm(sunspots~sincos(time(sunspots), 5/pi))
 
 }
 \references{

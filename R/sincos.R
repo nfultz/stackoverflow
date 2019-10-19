@@ -17,10 +17,15 @@
 #' 
 #' @export
 sincos <- function(x, period=168/2/pi) {
-  structure(cbind(`_sin`=sin(x/period), 
-                  `_cos`=cos(x/period)),
-            class="sincos", 
-            period=period)
+  a <- array(x %o% (1/period), dim=c(length(x), 2, length(period)))
+  
+  a[,1,] <- sin(a[,1,])
+  a[,2,] <- cos(a[,2,])
+  
+  dim(a) <- c(length(x), 2 *length(period))
+  colnames(a) <- outer(c("_sin","_cos"), seq_along(period), paste, sep='.')
+  
+  structure(a, class="sincos", period=period)
 }
 
 #' @export
@@ -28,6 +33,6 @@ makepredictcall.sincos <- function(var, call){
   if (as.character(call)[1L] != "sincos")
     return(call)
   call = match.call(sincos, call)
-  call["period"] <- attr(var, "period")
+  call[["period"]] <- attr(var, "period")
   call
 }
