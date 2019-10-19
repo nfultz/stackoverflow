@@ -15,24 +15,24 @@
 #' @examples 
 #' 
 #' df2 <- structure(list(Dx1 = c("231", "231", "001", "245", "231", "001", 
-# "231", "001", "231", "001", "001", "245", "001", "231", "245", 
-# "245", "001", "231", "245", "001"), Dx2 = c("001", "001", "001", 
-# "001", "001", "001", "001", "234", "001", "234", "001", "001", 
-# "001", "001", "001", "777", "777", "234", "001", "234"), Dx3 = c("456", 
-# "001", "444", "444", "001", "001", "444", "001", "001", "001", 
-# "444", "001", "444", "456", "456", "444", "444", "456", "001", 
-# "456")), class = "data.frame", row.names = c(NA, -20L))
+#' "231", "001", "231", "001", "001", "245", "001", "231", "245", 
+#' "245", "001", "231", "245", "001"), Dx2 = c("001", "001", "001", 
+#' "001", "001", "001", "001", "234", "001", "234", "001", "001", 
+#' "001", "001", "001", "777", "777", "234", "001", "234"), Dx3 = c("456", 
+#' "001", "444", "444", "001", "001", "444", "001", "001", "001", 
+#' "444", "001", "444", "456", "456", "444", "444", "456", "001", 
+#' "456")), class = "data.frame", row.names = c(NA, -20L))
 #'
 #' Y <- 1:nrow(df2)
 #' m <- lm(Y~bag(Dx1, Dx2, Dx3), df2)
 #' summary(m)
-#
+#'
 #' 
 #' 
 #' 
 #' @importFrom stats setNames
 #' @export
-bag <- function(..., prefix=".", levels=NULL, `NA`=NULL) {
+bag <- function(..., prefix=".", levels=NULL) {
   
   # Go from multiple columns to list of vectors
   bags <- mapply(c, ..., SIMPLIFY = FALSE, USE.NAMES = FALSE)
@@ -49,7 +49,7 @@ bag <- function(..., prefix=".", levels=NULL, `NA`=NULL) {
   out <- outer(levels, bags, Vectorize(`%in%`))
   
   # Output a data structure
-  structure(+t(out), class='bag', levels=levels)
+  structure(+t(out), class='bag', levels=levels, prefix=prefix)
 }
 
 
