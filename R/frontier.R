@@ -11,15 +11,14 @@
 #' 
 #' @examples 
 #' 
-#' df <- data.frame(a=1:10, b=1:10, c=2:11)
-#' 
-#' unique_columns(df)
-#' 
+#' df <- data.frame(v=c(.01, .012, .013, .014, .016), 
+#'                 r=c(.15,.12,.20,.21,.10))
+#'
+#' subset(df, frontier(r, -v))
+#'  
 #' @export
 
 
-#df <- data.frame(v=c(.01, .012, .013, .014, .016), 
-#                 r=c(.15,.12,.20,.21,.10))
 
 
 frontier <- function(x, y, q=1) {
