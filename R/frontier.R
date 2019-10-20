@@ -1,3 +1,23 @@
+#' Find efficient frontier
+#'
+#' 
+#'
+#' @param x
+#' @param y
+#' @return logical vector, TRUE if point is on efficient frontier
+#' 
+#' @references \url{https://stackoverflow.com/a/36209989/986793}
+#' @author \href{https://stackoverflow.com/users/986793/neal-fultz}{Neal Fultz}
+#' 
+#' @examples 
+#' 
+#' df <- data.frame(a=1:10, b=1:10, c=2:11)
+#' 
+#' unique_columns(df)
+#' 
+#' @export
+
+
 #df <- data.frame(v=c(.01, .012, .013, .014, .016), 
 #                 r=c(.15,.12,.20,.21,.10))
 
