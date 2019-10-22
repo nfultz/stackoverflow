@@ -1,6 +1,6 @@
 #' Find efficient frontier
 #'
-#' 
+#' A predicate that is TRUE if a point is on the efficient frontier.
 #'
 #' @param x
 #' @param y
@@ -11,27 +11,29 @@
 #' 
 #' @examples 
 #' 
-#' df <- data.frame(v=c(.01, .012, .013, .014, .016), 
-#'                 r=c(.15,.12,.20,.21,.10))
-#'
-#' subset(df, frontier(r, -v))
+#' df <- data.frame(x=rnorm(100), y=rnorm(100))
+#' plot(df)
+#' points(subset(df, frontier(x,y)), col='red', pch=15)
+#' points(subset(df, frontier(-x,y)), col='green', pch=15)
+#' points(subset(df, frontier(x,-y)), col='blue', pch=15)
+#' points(subset(df, frontier(-x,-y)), col='orange', pch=15)
 #'  
 #' @export
 
 
 
 
-frontier <- function(x, y, q=1) {
-  a <- c(1,-1,-1,1)[q]
-  b <- c(1,1,-1,-1)[q]
+frontier <- function(...) {
+  X <- list(...)
+
+  i <- order(..., decreasing = TRUE)
+  ret <- logical(length(i))
   
-  x <- a*xtfrm(x)
-  y <- b*xtfrm(y)
+  for(z in X[-1]){
+    i <- i[z[i] == cummax(z[i])]
+  }
   
-  i <- order(x, y, decreasing = TRUE)
-  i <- i[y[i] == cummax(y[i])]
   
-  ret <- logical(length(x))
   ret[i] <- TRUE
   ret
 }
