@@ -4,7 +4,7 @@
 \alias{bag}
 \title{Multi-indicators / "Bag o Words"}
 \usage{
-bag(..., prefix = ".", levels = NULL, `NA` = NULL)
+bag(..., prefix = ".", levels = NULL)
 }
 \arguments{
 \item{...}{the columns to bag}
