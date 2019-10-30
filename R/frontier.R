@@ -2,8 +2,7 @@
 #'
 #' A predicate that is TRUE if a point is on the efficient frontier.
 #'
-#' @param x
-#' @param y
+#' @param ... coordinates to scan
 #' @return logical vector, TRUE if point is on efficient frontier
 #' 
 #' @references \url{https://stackoverflow.com/a/36209989/986793}
