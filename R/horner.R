@@ -19,8 +19,8 @@
 #' 
 #' @export
 #' TODO!!!
-#' @author \href{http://stats.stackexchange.com/users/9394/zen}{Zen}, Neal Fultz
-#' @references \url{http://stats.stackexchange.com/questions/57262/implementation-of-dirichlet-cdf}
+#' @author \href{https://stackoverflow.com/users/9957245/torvin}{torvin}
+#' @references \url{https://stackoverflow.com/questions/53256945/evaluate-polynominal-function}
 horner.poly <- function(x, P) {
   
   z <- 0
