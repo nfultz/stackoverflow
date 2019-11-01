@@ -18,7 +18,6 @@
 #' horner.poly(polyroot(P), P)
 #' 
 #' @export
-#' TODO!!!
 #' @author \href{https://stackoverflow.com/users/9957245/torvin}{torvin}
 #' @references \url{https://stackoverflow.com/questions/53256945/evaluate-polynominal-function}
 horner.poly <- function(x, P) {
