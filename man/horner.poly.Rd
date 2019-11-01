@@ -34,8 +34,8 @@ horner.poly(polyroot(P), P)
 
 }
 \references{
-\url{http://stats.stackexchange.com/questions/57262/implementation-of-dirichlet-cdf}
+\url{https://stackoverflow.com/questions/53256945/evaluate-polynominal-function}
 }
 \author{
-\href{http://stats.stackexchange.com/users/9394/zen}{Zen}, Neal Fultz
+\href{https://stackoverflow.com/users/9957245/torvin}{torvin}
 }

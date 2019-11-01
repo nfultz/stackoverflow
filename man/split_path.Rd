@@ -21,5 +21,5 @@ split_path("~")
 \url{https://stackoverflow.com/questions/29214932/split-a-file-path-into-folder-names-vector/29232017#29232017}
 }
 \author{
-\href{https://stackoverflow.com/users/269476/james}{James}
+\href{https://stackoverflow.com/users/269476/james}{James}, Neal Fultz for vectorized version
 }

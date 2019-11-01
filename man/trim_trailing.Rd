@@ -2,9 +2,12 @@
 % Please edit documentation in R/horner.R
 \name{trim_trailing}
 \alias{trim_trailing}
+\alias{trim_leading}
 \title{Strip leading / trailing zeros}
 \usage{
 trim_trailing(x, value = 0)
+
+trim_leading(x, value = 0)
 }
 \arguments{
 \item{x}{a vector}
@@ -15,5 +18,9 @@ trim_trailing(x, value = 0)
 a new vector, with values at the right removed
 }
 \description{
-Removes \code{value} from rightmost elements of a vector.
+Removes \code{value} from rightmost/leftmost elements of a vector.
+}
+\examples{
+trim_leading(c(0,0,0,0,1:5))
+
 }
