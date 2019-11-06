@@ -8,8 +8,7 @@
 #' @return a symmetric square matrix
 #' 
 #' @author \href{https://stackoverflow.com/users/980833/josh-obrien}{Josh O'Brien}
-#' @references 
-#'   \url{https://stackoverflow.com/questions/26166569/copy-upper-triangle-to-lower-triangle-for-several-matrices-in-a-list}
+#' @references \url{https://stackoverflow.com/questions/26166569/copy-upper-triangle-to-lower-triangle-for-several-matrices-in-a-list}
 #' @export
 #' @examples 
 #'   x <- matrix(1:9,3,3)

@@ -6,8 +6,7 @@
 #' @return A matrix of all distinct permutations (by row)
 #' 
 #' @author \href{https://stackoverflow.com/users/827280/museful}{Museful}
-#' @references 
-#'   \url{https://stackoverflow.com/a/20199902/986793}
+#' @references \url{https://stackoverflow.com/a/20199902/986793}
 #' @export
 #' @examples 
 #'   permutations(LETTERS[1:4])
