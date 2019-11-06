@@ -37,28 +37,3 @@ horner.poly <- function(x, P) {
 #' @rdname horner.poly
 horner.rational <- function(x, P, Q) horner.poly(x, P) / horner.poly(x, Q)
 
-#' Strip leading / trailing zeros
-#' 
-#' Removes \code{value} from rightmost/leftmost elements of a vector.
-#' 
-#' @param x a vector
-#' @param value a value to strip from x
-#' 
-#' @return a new vector, with values at the right removed
-#' 
-#' @examples 
-#' trim_leading(c(0,0,0,0,1:5))
-#' 
-#' @export
-trim_trailing <- function(x, value=0) {
-  w <- which.max(cumsum(x != value))
-  x[seq.int(w)]
-}
-
-#' @export
-#' @rdname trim_trailing
-trim_leading <- function(x, value=0) {
-  w <- which.max(cummax(x != value))
-  x[seq.int(w, length(x))]
-}
-
