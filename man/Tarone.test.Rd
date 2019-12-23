@@ -28,5 +28,5 @@ Tarone.test(N, M)
 R. E. TARONE, Testing the goodness of fit of the binomial distribution, Biometrika, Volume 66, Issue 3, December 1979, Pages 585–590, \url{https://doi.org/10.1093/biomet/66.3.585}
 }
 \author{
-\href{https://stats.stackexchange.com/users/173082/reinstate-monica}{Reinstate Monica}
+\href{https://stats.stackexchange.com/users/173082/reinstate-monica}{Ben O'Neill}
 }
