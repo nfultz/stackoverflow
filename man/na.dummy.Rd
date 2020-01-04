@@ -12,7 +12,7 @@ fix_predvars(object)
 \arguments{
 \item{object}{an R object, typically a data.frame}
 
-\item{dots}{other arguments (not used)}
+\item{...}{other arguments (not used)}
 }
 \description{
 Handles missing values by filling in with mean, and adding a dummy variable.

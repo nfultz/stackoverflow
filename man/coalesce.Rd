@@ -12,8 +12,6 @@ coalesce(x, y, ...)
 \item{y}{replacement values}
 
 \item{...}{further replacement values}
-
-\item{what}{a value}
 }
 \value{
 x with NAs replaced with y

@@ -11,7 +11,6 @@
 #' @param x a vector
 #' @param y replacement values
 #' @param ... further replacement values
-#' @param what a value
 #' @return x with NAs replaced with y
 #' 
 #' @author \href{https://stackoverflow.com/users/903061/gregor}{Gregor Thomas}, 

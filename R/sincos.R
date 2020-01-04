@@ -28,6 +28,7 @@ sincos <- function(x, period=168/2/pi) {
   structure(a, class="sincos", period=period)
 }
 
+#' @importFrom stats makepredictcall
 #' @export
 makepredictcall.sincos <- function(var, call){
   if (as.character(call)[1L] != "sincos")

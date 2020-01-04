@@ -21,6 +21,7 @@ zip2 <- function(...) {
 #' @rdname zip2
 #' @examples 
 #' enumerate(l=LETTERS)
+#' @export
 enumerate <- function(...) {
   zip2(ix=seq_along(..1), ...)
 }

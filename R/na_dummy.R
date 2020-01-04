@@ -3,7 +3,7 @@
 #' Handles missing values by filling in with mean, and adding a dummy variable.
 #'
 #' @param object an R object, typically a data.frame
-#' @param dots other arguments (not used)
+#' @param ... other arguments (not used)
 #' 
 #' @references \url{https://stackoverflow.com/questions/54642599/impute-constant-and-create-missingness-dummy/54757973#54757973}
 #' @author \href{https://stackoverflow.com/users/986793/neal-fultz}{Neal Fultz}
@@ -47,7 +47,7 @@ na.dummy.data.frame <- function(object, ...) {
   structure(object, na.action=structure(cm, class='dummy'))
 }
 
-
+#' @importFrom stats terms na.action
 #' @export
 #' @rdname na.dummy
 fix_predvars <- function(object){
@@ -72,7 +72,7 @@ fix_predvars <- function(object){
   object
 }
 
-
+#' @importFrom stats makepredictcall
 #' @export
 makepredictcall.na.dummy <- function(var, call){
   if (as.character(call)[1L] != "na.dummy")
