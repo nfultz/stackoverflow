@@ -7,9 +7,9 @@
 read.directory(
   path = ".",
   pattern = NULL,
-  reader = read.csv,
+  reader = utils::read.csv,
   ...,
-  reducer = function(dfs) do.call(rbind.data.frame, dfs),
+  reducer = NULL,
   recursive = FALSE
 )
 }

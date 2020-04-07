@@ -12,10 +12,10 @@
 #' @author Neal Fultz
 #' @references \url{https://stackoverflow.com/questions/11433432/how-to-import-multiple-csv-files-at-once}
 #' 
-#' @importFrom utils read.csv
 #' @export
-read.directory <- function(path='.', pattern=NULL, reader=read.csv, ..., 
-                           reducer=function(dfs) do.call(rbind.data.frame, dfs), recursive=FALSE) {
+read.directory <- function(path='.', pattern=NULL, reader=utils::read.csv, ..., 
+                           reducer=NULL, recursive=FALSE) {
+  if(is.null(reducer)) reducer <- function(dfs) do.call(rbind.data.frame, dfs)
   files <- list.files(path, pattern, full.names = TRUE, recursive = recursive)
   
   reducer(lapply(files, reader, ...))
