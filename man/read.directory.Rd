@@ -27,19 +27,11 @@ read.directory(
 \item{recursive}{logical. Should the listing recurse into directories?}
 }
 \description{
-Replaces NA elements of x with corresponding element of y, and NA elements of 
-that with corresponding element from dots.
+Read in each file at a path and then unnest them. Defaults to csv format.
 }
-\section{Changes}{
-
-
-Rather than using eagerly evaluating the dot arguments and Reducing over them,
-instead we use recursion to evaluate them lazily.
-}
-
 \references{
-\url{https://stackoverflow.com/a/19254510/986793}
+\url{https://stackoverflow.com/questions/11433432/how-to-import-multiple-csv-files-at-once}
 }
 \author{
-\href{https://stackoverflow.com/users/903061/gregor}{Gregor Thomas},
+Neal Fultz
 }

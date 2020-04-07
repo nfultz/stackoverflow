@@ -1,12 +1,6 @@
 #' Bulk import data files 
 #' 
-#' Replaces NA elements of x with corresponding element of y, and NA elements of 
-#' that with corresponding element from dots.
-#' 
-#' @section Changes:
-#' 
-#' Rather than using eagerly evaluating the dot arguments and Reducing over them,
-#' instead we use recursion to evaluate them lazily. 
+#' Read in each file at a path and then unnest them. Defaults to csv format.
 #' 
 #' @param path        a character vector of full path names
 #' @param pattern     an optional \link[=regex]{regular expression}. Only file names which match the regular expression will be returned.
@@ -15,8 +9,8 @@
 #' @param reducer     a function to unnest the individual data files. Use I to retain the nested structure. 
 #' @param recursive 	logical. Should the listing recurse into directories?
 #'  
-#' @author \href{https://stackoverflow.com/users/903061/gregor}{Gregor Thomas}, 
-#' @references \url{https://stackoverflow.com/a/19254510/986793}
+#' @author Neal Fultz
+#' @references \url{https://stackoverflow.com/questions/11433432/how-to-import-multiple-csv-files-at-once}
 #' 
 #' @importFrom utils read.csv
 #' @export
