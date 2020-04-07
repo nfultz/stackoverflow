@@ -1,4 +1,7 @@
 # stackoverflow
+
+[![status](https://tinyverse.netlify.com/badge/stackoverflow)](https://CRAN.R-project.org/package=stackoverflow)
+
 An R package for snippets from stackoverflow
 
 When we want to use a function from stack overflow, add it here. It's cleaner,
