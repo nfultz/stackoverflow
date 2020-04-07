@@ -4,7 +4,8 @@
 \name{bat_passes}
 \alias{bat_passes}
 \title{Bat passes}
-\format{A data.frame with 80 observations and 5 variables.
+\format{
+A data.frame with 80 observations and 5 variables.
 
 \describe{
   \item{Location}{Five locations in the study}
@@ -12,7 +13,8 @@
   \item{Buzzes}{Count of buzzes per day}
   \item{Passes}{Count of passes per day}
   \item{Date}{Date of observation}
-}}
+}
+}
 \source{
 \url{https://stats.stackexchange.com/q/325334}
 }

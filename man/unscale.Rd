@@ -4,8 +4,7 @@
 \alias{unscale}
 \title{Reverse a scale}
 \usage{
-unscale(z, center = attr(z, "scaled:center"), scale = attr(z,
-  "scaled:scale"))
+unscale(z, center = attr(z, "scaled:center"), scale = attr(z, "scaled:scale"))
 }
 \arguments{
 \item{z}{a numeric matrix(like) object}

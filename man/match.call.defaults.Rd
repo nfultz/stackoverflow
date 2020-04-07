@@ -4,9 +4,12 @@
 \alias{match.call.defaults}
 \title{Argument matching with defaults}
 \usage{
-match.call.defaults(definition = sys.function(sys.parent()),
-  call = sys.call(sys.parent()), expand.dots = TRUE,
-  envir = parent.frame(2L))
+match.call.defaults(
+  definition = sys.function(sys.parent()),
+  call = sys.call(sys.parent()),
+  expand.dots = TRUE,
+  envir = parent.frame(2L)
+)
 }
 \arguments{
 \item{definition}{a function, by default the function from which match.call is called. See details.}

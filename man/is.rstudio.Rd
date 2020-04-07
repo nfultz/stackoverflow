@@ -2,9 +2,12 @@
 % Please edit documentation in R/rstudio.R
 \name{is.rstudio}
 \alias{is.rstudio}
+\alias{is.rstudio.console}
 \title{Is this in Rstudio?}
 \usage{
 is.rstudio()
+
+is.rstudio.console()
 }
 \value{
 TRUE if running in RStudio child process, or Rstudio console specifically.

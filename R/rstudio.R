@@ -17,6 +17,8 @@ is.rstudio = function() {
   Sys.getenv("RSTUDIO") == 1
 }
 
+#' @export
+#' @rdname is.rstudio
 is.rstudio.console = function(){
   .Platform$GUI == "RStudio"
 }

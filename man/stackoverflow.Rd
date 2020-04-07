@@ -3,7 +3,6 @@
 \docType{package}
 \name{stackoverflow}
 \alias{stackoverflow}
-\alias{stackoverflow-package}
 \title{Stack Overflow's Greatest Hits}
 \description{
 The stackoverflow package consists of helper functions 
