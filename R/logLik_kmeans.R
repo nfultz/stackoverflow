@@ -13,7 +13,7 @@
 #' AIC(cl)
 
 logLik.kmeans <- function(object, ...) structure(
-  object$tot.withinss,
+  -object$tot.withinss,
   nobs = length(object$cluster),
   df = nrow(object$centers) * ncol(object$centers),
   class = 'logLik'
